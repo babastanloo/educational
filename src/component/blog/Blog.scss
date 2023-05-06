@@ -1,0 +1,64 @@
+:root {
+    --primaryColor: hsl(26, 93%, 50%);
+    --hoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0, 100%);
+    --blackColor: hsl(0, 0, 1%);
+    --whiteColorDeam: hsl(0, 0, 93%);
+    --textColor: hsl(240, 1%, 48%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: hsl(0, 0%, 75%);
+    --inputColor: hsl(330, 12%, 97%);
+    /* box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45); */
+}
+
+
+.blog{
+    .mainContainer{
+        gap: 1rem;
+        .singlePost{
+            gap: 1rem;
+            .imgDiv{
+                height: 200px;
+                width: 100%;
+                border-radius: 1rem;
+                border: 5px solid var(--greyBg);
+                box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.406);
+                overflow: hidden;
+                &:hover{
+                    transform: scale(1.2);
+                    transition: 3sec ease-in-out;
+                }
+                img{
+                    height: 100%;
+                }
+            }
+            .postDetails{
+                h3{
+                    color: black;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: var(--textColor);
+                }
+                
+            }
+                a {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: var(--primaryColor);
+                    padding-top: 0.5rem;
+                    width: max-content;
+                    &:hover{
+                        color: var(--hoverColor);
+                        font-weight: 600;
+                        .icon{
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+        }
+    }
+}
