@@ -52,6 +52,9 @@ li {
   border-radius: 3rem;
   cursor: pointer;
 }
+.btn:hover {
+  background: var(--hoverColor);
+}
 .btn a {
   color: var(--whiteColor);
   font-weight: 500;
@@ -81,4 +84,56 @@ video {
 }
 input {
   font-size: 100%;
+}
+
+/* MEDIA QUARRY ===========> */
+
+@media screen and (min-width: 556px) {
+  .mainContent,
+  .singlePost {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 884px) {
+  .mainContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 70% !important;
+    margin: auto !important;
+  }
+  .section {
+    padding: 5rem 0 3rem;
+  }
+  .secIntro {
+    margin: 0 auto rem;
+  }
+  .secIntro .secTitle {
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  .secIntro p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body {
+    zoom: 1.7;
+  }
+}
+::selection {
+  background: var(--primaryColor);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyBg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 10px;
+  cursor: pointer;
 }

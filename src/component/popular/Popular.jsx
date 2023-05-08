@@ -8,8 +8,14 @@ import img2 from "../../assets/images/image(5).jpg";
 import img5 from "../../assets/images/image(2).jpg";
 import img7 from "../../assets/images/image(3).jpg";
 import img9 from "../../assets/images/image(4).jpg";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Popular = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   // using high oder arrey methods to display other destinations.
   const Data = [
     {
@@ -46,14 +52,22 @@ const Popular = () => {
     <section className="popular section container">
       <div className="secContainer">
         <div className="secHeader flex">
-          <div className="textDiv">
+          <div
+            className="textDiv"
+            data-aos="fade-right"
+            data-aos-duration="2500"
+          >
             <h1 className="secTitle">Popular Destination</h1>
             <p>
               From Historical cities to natural spectaculars , come see the best
               of the world!
             </p>
           </div>
-          <div className="iconDiv flex">
+          <div
+            className="iconDiv flex"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <AiOutlineArrowLeft className="icon leftIcon" />
             <AiOutlineArrowRight className="icon rightIcon" />
           </div>
@@ -61,7 +75,7 @@ const Popular = () => {
         <div className="mainContent grid">
           {Data.map(({ id, imgSrc, destTitle, location, grade }) => {
             return (
-              <div className="singleDestination">
+              <div key={id} className="singleDestination" data-aos="fade-up">
                 <div className="destImage">
                   <img src={imgSrc} alt="image title" />
                   <div className="overlayInfo">

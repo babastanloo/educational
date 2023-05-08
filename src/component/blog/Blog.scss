@@ -16,7 +16,7 @@
     .mainContainer{
         gap: 1rem;
         .singlePost{
-            gap: 1rem;
+            gap: 1.5rem;
             .imgDiv{
                 height: 200px;
                 width: 100%;
@@ -61,4 +61,12 @@
                 }
         }
     }
+}
+@media screen and (min-width: 540px) {
+    .blog{
+        .mainContainer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
 }

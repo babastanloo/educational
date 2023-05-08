@@ -5,14 +5,21 @@ import { FaWifi } from "react-icons/fa";
 import { MdAirportShuttle } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
+// for the effects
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // images
 
 import img2 from "../../assets/images/bgimage1.jpg";
-import img5 from "../../assets/images/image(2).jpg";
+// import img5 from "../../assets/images/image(2).jpg";
 import img7 from "../../assets/images/image(3).jpg";
 import img9 from "../../assets/images/image(4).jpg";
 
 const Offer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   // using high oder arrey methods to display other destinations.
   const Offers = [
     {
@@ -22,13 +29,13 @@ const Offer = () => {
       location: "Peru",
       price: "$7,320",
     },
-    {
-      id: 2,
-      imgSrc: img5,
-      destTitle: "Guanajuato",
-      location: "Mexico",
-      price: "$5,410",
-    },
+    // {
+    //   id: 2,
+    //   imgSrc: img5,
+    //   destTitle: "Guanajuato",
+    //   location: "Mexico",
+    //   price: "$5,410",
+    // },
     {
       id: 3,
       imgSrc: img7,
@@ -47,7 +54,7 @@ const Offer = () => {
   return (
     <section className="offer section container">
       <div className="setContainer">
-        <div className="secIntro">
+        <div className="secIntro" data-aos="fade-up" data-aos-duration="2200">
           <h2 className="secTitle">Special Offers</h2>
           <p>
             Historical cities to natural spectaculars, come see the best of the
@@ -55,9 +62,14 @@ const Offer = () => {
           </p>
         </div>
         <div className="mainContent grid">
-          {Offers.map(({ imgSrc, destTitle, location, price }) => {
+          {Offers.map(({ id, imgSrc, destTitle, location, price }) => {
             return (
-              <div className="singleOffer">
+              <div
+                key={id}
+                className="singleOffer"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="destImage">
                   <img src={imgSrc} alt={destTitle} />
                   <span className="discount">30% Off</span>
