@@ -4,10 +4,10 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
 // image
-import img2 from "../../assets/images/image(5).jpg";
-import img5 from "../../assets/images/image(2).jpg";
-import img7 from "../../assets/images/image(3).jpg";
-import img9 from "../../assets/images/image(4).jpg";
+import img2 from "../../assets/images/image1 (6).jpg";
+import img5 from "../../assets/images/image1 (1).jpg";
+import img7 from "../../assets/images/image1 (2).jpg";
+import img9 from "../../assets/images/image(3).jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";

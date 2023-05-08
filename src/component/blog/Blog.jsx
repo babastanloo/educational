@@ -1,11 +1,11 @@
 import "./Blog.css";
 import { BsArrowRightShort } from "react-icons/bs";
 // imprt image===>
-import img from "../../assets/images/image(5).jpg";
-import img2 from "../../assets/images/image(2).jpg";
-import img3 from "../../assets/images/image(3).jpg";
-import img4 from "../../assets/images/image(4).jpg";
+import img from "../../assets/images/nigeria.jpg";
+import img2 from "../../assets/images/eiffel.jpg";
+import img3 from "../../assets/images/image1 (5).jpg";
 
+import img4 from "../../assets/images/image(4).jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,8 +20,8 @@ const Blog = () => {
     {
       ID: 1,
       postImage: img,
-      title: "Beautiful Morocco lets travel there",
-      desc: "The Kingdom of Morocco is a country in the north Western part of Africa, with coastline with the atlantic ocean and the Mediterranean sea.",
+      title: "Beautiful Nigeria lets travel there",
+      desc: "The Republic of Nigeria is a country in the Western part of Africa, with coastline with the atlantic ocean and the Mediterranean sea.",
     },
     {
       ID: 2,

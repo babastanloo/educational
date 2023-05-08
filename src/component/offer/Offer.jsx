@@ -11,10 +11,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 // images
 
-import img2 from "../../assets/images/bgimage1.jpg";
-// import img5 from "../../assets/images/image(2).jpg";
-import img7 from "../../assets/images/image(3).jpg";
-import img9 from "../../assets/images/image(4).jpg";
+import img2 from "../../assets/images/hotels (2).jpg";
+import img7 from "../../assets/images/hotels (4).jpg";
+import img9 from "../../assets/images/hotels (1).jpg";
 
 const Offer = () => {
   useEffect(() => {
